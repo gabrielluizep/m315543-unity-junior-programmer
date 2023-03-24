@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 7610238428750616796}
   - component: {fileID: 7610238429228328155}
   - component: {fileID: 245727794356752993}
+  - component: {fileID: -9001055384774684268}
+  - component: {fileID: -1704061605869730916}
+  - component: {fileID: 3857364439022515702}
   m_Layer: 0
   m_Name: Wine
   m_TagString: Untagged
@@ -111,3 +114,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   topBound: 30
+  lowerBound: -10
+--- !u!65 &-9001055384774684268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610238428748678684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.515049, y: 1.1599249, z: 0.63182926}
+  m_Center: {x: -0.023974895, y: 0.018291295, z: 0.089686394}
+--- !u!54 &-1704061605869730916
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610238428748678684}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &3857364439022515702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610238428748678684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848b7ae3cd28e9f44bbd3ad44bff2b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
