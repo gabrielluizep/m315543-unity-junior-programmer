@@ -7,12 +7,31 @@ public class PlayerControllerP2 : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     public float speed = 10.0f;
-    public float xMax = 10;
-    public float xMin = -10;
-    public float zMax = 10;
-    public float zMin = 0;
+    public float xMax = 20;
+    public float xMin = -20;
+    public float zMax = 15;
+    public float zMin = -1;
+
+    public int lives = 3;
+    public int score = 0;
 
     public GameObject projectilePrefab;
+
+    public int GetLives(){
+        return lives;
+    }
+
+    public int SetLives(int newLives) {
+        return lives = newLives ;
+    }   
+
+    public int GetScore(){
+        return score;
+    }
+
+    public int SetScore(int newScore) {
+        return score = newScore;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +63,9 @@ public class PlayerControllerP2 : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.Space)){
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+           GameObject newBullet = Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+
+           newBullet.GetComponent<DetectCollisions>().player = gameObject;
         }
 
         horizontalInput = Input.GetAxis("Horizontal");

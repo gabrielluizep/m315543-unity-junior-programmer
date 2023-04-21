@@ -143,10 +143,12 @@ MonoBehaviour:
   horizontalInput: 0
   verticalInput: 0
   speed: 10
-  xMax: 10
-  xMin: -10
-  zMax: 10
-  zMin: 0
+  xMax: 20
+  xMin: -20
+  zMax: 15
+  zMin: -1
+  lives: 3
+  score: 0
   projectilePrefab: {fileID: 7610238428748678684, guid: a77394fc3380007458af53c6cf73c60b, type: 3}
 --- !u!54 &45325768
 Rigidbody:
@@ -164,6 +166,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &45325771
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45325761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0090902, y: 3.7135613, z: 1.1079203}
+  m_Center: {x: -0.051894546, y: 1.3567806, z: 0.053960145}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -721,6 +740,8 @@ MonoBehaviour:
   - {fileID: 323114787378647806, guid: aea986f349e3c9949b8d7273590bfb89, type: 3}
   spawnRangeX: 20
   spawnPosZ: 20
+  spawnMinZ: -1
+  spawnMaxZ: 15
 --- !u!4 &1897043117
 Transform:
   m_ObjectHideFlags: 0
@@ -867,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 323114787378830248, guid: aea986f349e3c9949b8d7273590bfb89, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.52
+      value: -19.3
       objectReference: {fileID: 0}
     - target: {fileID: 323114787378830248, guid: aea986f349e3c9949b8d7273590bfb89, type: 3}
       propertyPath: m_LocalPosition.y

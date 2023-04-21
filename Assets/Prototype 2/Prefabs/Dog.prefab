@@ -2014,8 +2014,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a16eb8eb523641546be88004cec20351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topBound: 30
-  lowerBound: -10
+  topBound: 35
+  lowerBound: -15
+  rightBound: 25
+  leftBound: -25
 --- !u!65 &1683198862422830259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2041,6 +2043,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848b7ae3cd28e9f44bbd3ad44bff2b2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 3
+  score: 0
 --- !u!1 &323114787378648214
 GameObject:
   m_ObjectHideFlags: 0

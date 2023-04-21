@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3857364439022515702}
   m_Layer: 0
   m_Name: Wine
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,8 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a16eb8eb523641546be88004cec20351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topBound: 30
-  lowerBound: -10
 --- !u!65 &-9001055384774684268
 BoxCollider:
   m_ObjectHideFlags: 0
